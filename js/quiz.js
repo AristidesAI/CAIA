@@ -85,19 +85,104 @@
   // Data Loading
   // ============================================================================
 
+  function getBasePath() {
+    // Get base path for GitHub Pages compatibility
+    if (window.CAIA_BASE_PATH) {
+      return window.CAIA_BASE_PATH;
+    }
+    const path = window.location.pathname;
+    const basePath = path.split('/').slice(0, -1).join('/') || '';
+    return basePath;
+  }
+
+  function getResourcePath(relativePath) {
+    const base = getBasePath();
+    if (base && !relativePath.startsWith('/')) {
+      return base + '/' + relativePath;
+    }
+    return relativePath;
+  }
+
+  function showLoading() {
+    const loadingIndicator = document.getElementById('loading-indicator');
+    if (loadingIndicator) {
+      loadingIndicator.classList.remove('hidden');
+    }
+  }
+
+  function hideLoading() {
+    const loadingIndicator = document.getElementById('loading-indicator');
+    if (loadingIndicator) {
+      loadingIndicator.classList.add('hidden');
+    }
+  }
+
+  function showError(message) {
+    console.error(message);
+    hideLoading();
+    const errorMessage = document.getElementById('error-message');
+    const errorText = document.getElementById('error-text');
+    if (errorMessage && errorText) {
+      errorText.textContent = message;
+      errorMessage.classList.remove('hidden');
+    } else {
+      // Fallback: alert if error elements don't exist
+      alert(message);
+    }
+  }
+
+  function hideError() {
+    const errorMessage = document.getElementById('error-message');
+    if (errorMessage) {
+      errorMessage.classList.add('hidden');
+    }
+  }
+
   async function loadQuestions() {
+    showLoading();
+    hideError();
+    
     try {
-      const response = await fetch('data/questions/questions.json');
-      if (!response.ok) {
-        throw new Error('Failed to load questions');
+      // Try multiple path variations for GitHub Pages compatibility
+      const paths = [
+        getResourcePath('data/questions/questions.json'),
+        'data/questions/questions.json',
+        './data/questions/questions.json',
+        '/data/questions/questions.json'
+      ];
+
+      let response = null;
+      let lastError = null;
+
+      for (const path of paths) {
+        try {
+          response = await fetch(path);
+          if (response.ok) {
+            break;
+          }
+        } catch (err) {
+          lastError = err;
+          continue;
+        }
       }
+
+      if (!response || !response.ok) {
+        throw new Error(`Failed to load questions. HTTP ${response ? response.status : 'network error'}`);
+      }
+
       const data = await response.json();
+      
+      if (!data || !data.questions || !Array.isArray(data.questions)) {
+        throw new Error('Invalid question data format');
+      }
+
       state.questions = data.questions;
       updateHomeStats();
+      hideLoading();
       return data;
     } catch (error) {
       console.error('Error loading questions:', error);
-      showError('Failed to load questions. Please refresh the page.');
+      showError(`Failed to load questions: ${error.message}. Please check your internet connection and refresh the page.`);
       return null;
     }
   }
@@ -152,6 +237,12 @@
   // ============================================================================
 
   function startQuiz(level = null, topics = []) {
+    // Check if questions are loaded
+    if (!state.questions || state.questions.length === 0) {
+      showError('Questions are still loading. Please wait and try again.');
+      return;
+    }
+
     // Filter questions based on level and topics
     let filteredQuestions = [...state.questions];
 
@@ -161,6 +252,12 @@
 
     if (topics.length > 0) {
       filteredQuestions = filteredQuestions.filter(q => topics.includes(q.topic));
+    }
+
+    // Check if we have questions after filtering
+    if (filteredQuestions.length === 0) {
+      showError('No questions available for the selected level and topics. Please try different options.');
+      return;
     }
 
     // Shuffle questions
@@ -526,10 +623,7 @@
     return text.substring(0, maxLength) + '...';
   }
 
-  function showError(message) {
-    console.error(message);
-    // Could implement toast notifications here
-  }
+  // showError is now defined in the Data Loading section above
 
   // ============================================================================
   // Event Listeners
@@ -657,9 +751,18 @@
   // ============================================================================
 
   async function init() {
-    await loadQuestions();
-    initEventListeners();
-    showView('home');
+    try {
+      const data = await loadQuestions();
+      if (!data) {
+        // If loading failed, still initialize UI but show error
+        console.warn('Questions failed to load, but continuing with UI initialization');
+      }
+      initEventListeners();
+      showView('home');
+    } catch (error) {
+      console.error('Initialization error:', error);
+      showError('Failed to initialize application. Please refresh the page.');
+    }
   }
 
   // Start the application

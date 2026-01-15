@@ -338,6 +338,45 @@
     </footer>
   </div>
 
+  <!-- Loading Indicator -->
+  <div id="loading-indicator" class="loading-overlay hidden">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading questions...</p>
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div id="error-message" class="error-overlay hidden">
+    <div class="error-box">
+      <h3>Error Loading Questions</h3>
+      <p id="error-text">Failed to load quiz questions. Please refresh the page.</p>
+      <button class="btn btn-primary" onclick="window.location.reload()">Refresh Page</button>
+    </div>
+  </div>
+
+  <script>
+    // Base path detection for GitHub Pages
+    (function() {
+      // Get the base path - works for both root and subdirectory deployments
+      const path = window.location.pathname;
+      const basePath = path.split('/').slice(0, -1).join('/') || '';
+      
+      // Store base path for use in other scripts
+      window.CAIA_BASE_PATH = basePath;
+      
+      // Fix paths for CSS and JS if needed
+      if (basePath) {
+        const links = document.querySelectorAll('link[rel="stylesheet"]');
+        links.forEach(link => {
+          if (link.href && !link.href.startsWith('http') && !link.href.startsWith('/')) {
+            const currentHref = link.getAttribute('href');
+            link.href = basePath + '/' + currentHref;
+          }
+        });
+      }
+    })();
+  </script>
   <script src="js/quiz.js"></script>
 </body>
 </html>
