@@ -1,0 +1,593 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-27",
+    "source": "CAIA Practice Questions",
+    "disclaimer": "These are practice questions, not actual CAIA exam questions. Actual CAIA exam questions are copyrighted and confidential."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "level": 1,
+      "topic": "CAIA Ethical Principles",
+      "question": "Which of the following best describes the fiduciary duty of loyalty in alternative investments?",
+      "options": [
+        "Ensuring the highest long-term return above all other considerations",
+        "Prioritizing the interests of beneficiaries over personal or firm interests",
+        "Keeping client data confidential except when required by law",
+        "Exercising care and prudence in investment decisions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The duty of loyalty requires that investment professionals prioritize their clients' interests above their own personal or firm interests. This is a fundamental ethical principle in alternative investments."
+    },
+    {
+      "id": 2,
+      "level": 1,
+      "topic": "CAIA Ethical Principles",
+      "question": "A CAIA charterholder discovers a conflict of interest between their firm and a client. According to CAIA ethical principles, what should be the first step?",
+      "options": [
+        "Proceed with the transaction if it benefits the client",
+        "Disclose the conflict to the client immediately",
+        "Seek approval from the firm's compliance department only",
+        "Avoid the conflict by declining to work with that client"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Full disclosure of conflicts of interest is required. The charterholder must inform the client about the conflict and obtain informed consent before proceeding."
+    },
+    {
+      "id": 3,
+      "level": 1,
+      "topic": "Introduction to Alternative Investments",
+      "question": "Which of the following characteristics is most commonly associated with alternative investments compared to traditional investments?",
+      "options": [
+        "Higher liquidity",
+        "Lower correlation with traditional asset classes",
+        "More transparent pricing",
+        "Lower fees"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Alternative investments are typically characterized by lower correlation with traditional asset classes (stocks and bonds), which provides diversification benefits. They often have lower liquidity, less transparent pricing, and potentially higher fees."
+    },
+    {
+      "id": 4,
+      "level": 1,
+      "topic": "Introduction to Alternative Investments",
+      "question": "An investor is considering adding alternative investments to a portfolio. Which of the following is a primary benefit of including alternatives?",
+      "options": [
+        "Guaranteed higher returns",
+        "Reduced portfolio volatility through diversification",
+        "Elimination of all investment risk",
+        "Immediate liquidity access"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The primary benefit of alternative investments is portfolio diversification, which can reduce overall portfolio volatility. Alternatives do not guarantee higher returns, eliminate risk, or provide immediate liquidity."
+    },
+    {
+      "id": 5,
+      "level": 1,
+      "topic": "Introduction to Alternative Investments",
+      "question": "Which of the following is least likely to be classified as an alternative investment?",
+      "options": [
+        "Private equity",
+        "Commodities",
+        "Treasury bonds",
+        "Real assets"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Treasury bonds are traditional fixed-income securities, not alternative investments. Private equity, commodities, and real assets are all considered alternative investments."
+    },
+    {
+      "id": 6,
+      "level": 1,
+      "topic": "Real Assets",
+      "question": "A real estate investment trust (REIT) is most likely to provide which of the following benefits?",
+      "options": [
+        "Direct ownership of physical properties",
+        "Tax-advantaged income distribution",
+        "Guaranteed returns",
+        "Unlimited leverage capacity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "REITs are required to distribute at least 90% of taxable income to shareholders, which provides tax-advantaged income. REITs provide indirect ownership through shares, do not guarantee returns, and have leverage limitations."
+    },
+    {
+      "id": 7,
+      "level": 1,
+      "topic": "Real Assets",
+      "question": "Which of the following is a key risk associated with infrastructure investments?",
+      "options": [
+        "High liquidity",
+        "Regulatory and political risk",
+        "Low capital requirements",
+        "Short investment horizons"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Infrastructure investments face significant regulatory and political risks, as they often depend on government policies, permits, and regulations. They typically have low liquidity, high capital requirements, and long investment horizons."
+    },
+    {
+      "id": 8,
+      "level": 1,
+      "topic": "Real Assets",
+      "question": "An investor is evaluating a timberland investment. Which factor is most critical for valuation?",
+      "options": [
+        "Current stock market performance",
+        "Biological growth rates and harvest cycles",
+        "Short-term interest rate changes",
+        "Daily trading volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Timberland valuation depends heavily on biological factors such as growth rates, species characteristics, and harvest cycles. Stock market performance, interest rates, and trading volume are less directly relevant."
+    },
+    {
+      "id": 9,
+      "level": 1,
+      "topic": "Private Equity",
+      "question": "In a leveraged buyout (LBO), which of the following is the primary source of returns?",
+      "options": [
+        "Operational improvements only",
+        "Financial leverage and multiple expansion",
+        "Dividend payments",
+        "Interest income"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LBO returns primarily come from financial leverage (using debt to amplify equity returns) and multiple expansion (selling at a higher valuation multiple than purchased). Operational improvements contribute but are secondary."
+    },
+    {
+      "id": 10,
+      "level": 1,
+      "topic": "Private Equity",
+      "question": "A venture capital fund typically invests in companies at which stage?",
+      "options": [
+        "Mature, publicly traded companies",
+        "Early-stage, high-growth potential companies",
+        "Distressed companies in bankruptcy",
+        "Companies with declining revenues"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Venture capital focuses on early-stage companies with high growth potential, often in technology or innovative sectors. These companies are typically not publicly traded and may not yet be profitable."
+    },
+    {
+      "id": 11,
+      "level": 1,
+      "topic": "Private Equity",
+      "question": "Which of the following best describes the \"J-curve\" in private equity?",
+      "options": [
+        "A pattern showing immediate positive returns",
+        "A pattern showing initial negative returns followed by positive returns over time",
+        "A linear return pattern",
+        "A pattern showing consistent returns throughout the fund life"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The J-curve describes the typical pattern in private equity where early returns are negative (due to fees and initial investments) but improve over time as portfolio companies mature and are exited."
+    },
+    {
+      "id": 12,
+      "level": 1,
+      "topic": "Private Equity",
+      "question": "What is the primary method used to value private equity investments?",
+      "options": [
+        "Market prices from daily trading",
+        "Net asset value (NAV) based on fair value estimates",
+        "Historical cost",
+        "Face value of debt"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Private equity investments are typically valued using NAV based on fair value estimates, as there is no active public market. Valuations are often performed quarterly and may use various methodologies (comparable companies, discounted cash flow, etc.)."
+    },
+    {
+      "id": 13,
+      "level": 1,
+      "topic": "Private Debt",
+      "question": "Which of the following is a characteristic of direct lending in private debt?",
+      "options": [
+        "Loans are publicly traded",
+        "Loans are typically made to large, investment-grade corporations",
+        "Loans are negotiated directly between lender and borrower",
+        "Loans have standardized terms across all borrowers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Direct lending involves loans negotiated directly between the lender and borrower, typically to middle-market companies. These loans are not publicly traded, are often to non-investment-grade companies, and have customized terms."
+    },
+    {
+      "id": 14,
+      "level": 1,
+      "topic": "Private Debt",
+      "question": "A distressed debt investor is most likely seeking returns from:",
+      "options": [
+        "Regular interest payments",
+        "Capital appreciation from restructuring or recovery",
+        "Dividend payments",
+        "Currency appreciation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Distressed debt investors typically seek capital appreciation from companies that are restructured, recover, or are acquired. Regular interest payments may be uncertain or suspended in distressed situations."
+    },
+    {
+      "id": 15,
+      "level": 1,
+      "topic": "Private Debt",
+      "question": "Which of the following risks is most significant in private debt investments?",
+      "options": [
+        "Interest rate risk",
+        "Credit and default risk",
+        "Currency risk",
+        "Liquidity risk from daily trading"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Credit and default risk is the primary concern in private debt, as these loans are typically made to companies with higher credit risk. While interest rate, currency, and liquidity risks exist, credit risk is the most significant."
+    },
+    {
+      "id": 16,
+      "level": 1,
+      "topic": "Hedge Funds",
+      "question": "A hedge fund uses leverage to magnify returns. What is a likely consequence of high leverage under a stress scenario?",
+      "options": [
+        "Lower exposure to market risk",
+        "Increased sensitivity to market movements and potential for large losses",
+        "Reduced operational risk",
+        "Higher liquidity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "High leverage amplifies both gains and losses. In stress scenarios, leveraged positions can lead to significant losses and may force margin calls or liquidation. Leverage increases, not decreases, risk exposure."
+    },
+    {
+      "id": 17,
+      "level": 1,
+      "topic": "Hedge Funds",
+      "question": "Which of the following hedge fund strategies is most likely to be market neutral?",
+      "options": [
+        "Long/short equity",
+        "Long-only equity",
+        "Global macro",
+        "Directional commodity trading"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Long/short equity strategies can be constructed to be market neutral by balancing long and short positions. Long-only, global macro, and directional commodity strategies are typically directional and not market neutral."
+    },
+    {
+      "id": 18,
+      "level": 1,
+      "topic": "Hedge Funds",
+      "question": "A hedge fund charges a \"2 and 20\" fee structure. This means:",
+      "options": [
+        "2% management fee and 20% performance fee",
+        "20% management fee and 2% performance fee",
+        "2% of assets and 20% of returns",
+        "2% upfront and 20% at exit"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"2 and 20\" refers to a 2% annual management fee (on assets under management) and a 20% performance fee (on profits above a hurdle rate, typically with a high-water mark)."
+    },
+    {
+      "id": 19,
+      "level": 1,
+      "topic": "Hedge Funds",
+      "question": "Which of the following is a key risk in hedge fund investing?",
+      "options": [
+        "Guaranteed returns",
+        "Lack of transparency and liquidity",
+        "No management fees",
+        "Unlimited redemption rights"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hedge funds often have limited transparency (proprietary strategies) and liquidity restrictions (lock-up periods, gates, side pockets). They charge fees and have redemption restrictions, not unlimited rights."
+    },
+    {
+      "id": 20,
+      "level": 1,
+      "topic": "Digital Assets",
+      "question": "Which of the following is a primary risk associated with cryptocurrency investments?",
+      "options": [
+        "Guaranteed returns",
+        "Regulatory uncertainty and volatility",
+        "High liquidity in all markets",
+        "Centralized control"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cryptocurrency investments face significant regulatory uncertainty and extreme volatility. They may have limited liquidity in some markets and are typically decentralized, not centralized."
+    },
+    {
+      "id": 21,
+      "level": 1,
+      "topic": "Digital Assets",
+      "question": "A blockchain-based smart contract is best described as:",
+      "options": [
+        "A traditional legal contract",
+        "Self-executing code that automatically enforces contract terms",
+        "A government-regulated financial instrument",
+        "A physical document stored on a server"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Smart contracts are self-executing programs stored on a blockchain that automatically execute when predetermined conditions are met, without requiring intermediaries."
+    },
+    {
+      "id": 22,
+      "level": 1,
+      "topic": "Digital Assets",
+      "question": "Which of the following is a key consideration for institutional investors evaluating digital assets?",
+      "options": [
+        "Lack of regulatory framework",
+        "Custody and security of digital wallets",
+        "Guaranteed returns",
+        "Unlimited liquidity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Custody and security are critical concerns for institutional investors, as digital assets require secure storage of private keys. Regulatory frameworks are developing, returns are not guaranteed, and liquidity can be limited."
+    },
+    {
+      "id": 23,
+      "level": 1,
+      "topic": "Funds of Funds",
+      "question": "A fund of funds (FoF) structure provides which primary benefit?",
+      "options": [
+        "Elimination of all fees",
+        "Diversification across multiple underlying funds",
+        "Guaranteed returns",
+        "Direct management of portfolio companies"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Funds of funds provide diversification by investing in multiple underlying funds, reducing concentration risk. They typically have additional fees (layered fee structure), do not guarantee returns, and do not directly manage investments."
+    },
+    {
+      "id": 24,
+      "level": 1,
+      "topic": "Funds of Funds",
+      "question": "Which of the following is a disadvantage of the fund of funds structure?",
+      "options": [
+        "Diversification benefits",
+        "Layered fee structure (fees on fees)",
+        "Professional fund selection",
+        "Access to closed funds"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The layered fee structure is a key disadvantage, as investors pay fees to both the FoF manager and the underlying fund managers. The other options are advantages of FoF structures."
+    },
+    {
+      "id": 25,
+      "level": 2,
+      "topic": "CAIA Ethical Principles",
+      "question": "A CAIA charterholder is evaluating a private equity fund for a pension plan client. The fund manager offers the charterholder's firm a co-investment opportunity in the same fund. According to CAIA ethical principles, what should the charterholder do?",
+      "options": [
+        "Accept the co-investment without disclosure",
+        "Decline the co-investment to avoid any appearance of conflict",
+        "Disclose the co-investment opportunity to the client and obtain informed consent",
+        "Accept the co-investment only if it benefits the client"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Full disclosure is required when there are potential conflicts of interest. The charterholder must inform the client about the co-investment opportunity and obtain informed consent, allowing the client to make an informed decision."
+    },
+    {
+      "id": 26,
+      "level": 2,
+      "topic": "Institutional Asset Owners",
+      "question": "A defined benefit pension plan has a funding ratio of 85%. Which of the following asset allocation strategies would be most appropriate?",
+      "options": [
+        "Increase allocation to high-risk, high-return alternatives",
+        "Implement a liability-driven investing (LDI) approach to better match liabilities",
+        "Move entirely to cash and fixed income",
+        "Ignore liability structure and focus only on returns"
+      ],
+      "correctAnswer": 1,
+      "explanation": "With a funding ratio below 100%, the plan should consider LDI strategies to better align assets with liabilities, reducing funding risk. This doesn't mean avoiding all alternatives, but rather ensuring asset-liability matching."
+    },
+    {
+      "id": 27,
+      "level": 2,
+      "topic": "Institutional Asset Owners",
+      "question": "An endowment fund with a long-term investment horizon is most likely to have a higher allocation to which asset class?",
+      "options": [
+        "Cash and money market instruments",
+        "Illiquid alternative investments with long lock-up periods",
+        "Short-term bonds",
+        "Highly liquid, low-return assets"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Endowments typically have long-term horizons and can tolerate illiquidity. They often allocate significantly to illiquid alternatives (private equity, real assets) to capture illiquidity premiums and enhance long-term returns."
+    },
+    {
+      "id": 28,
+      "level": 2,
+      "topic": "Asset Allocation",
+      "question": "An institutional investor is constructing a portfolio with 60% traditional assets and 40% alternatives. Which of the following is a key consideration when allocating to alternatives?",
+      "options": [
+        "Alternatives should be treated identically to traditional assets in allocation models",
+        "Liquidity constraints and lock-up periods must be considered",
+        "All alternatives have the same risk-return profile",
+        "Alternatives require no due diligence"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Liquidity constraints, lock-up periods, and redemption terms are critical considerations when allocating to alternatives. Alternatives have diverse risk-return profiles and require thorough due diligence."
+    },
+    {
+      "id": 29,
+      "level": 2,
+      "topic": "Asset Allocation",
+      "question": "A portfolio manager is rebalancing a portfolio that includes illiquid alternative investments. Which approach is most appropriate?",
+      "options": [
+        "Rebalance daily to maintain exact target allocations",
+        "Use tolerance bands and consider transaction costs and liquidity constraints",
+        "Never rebalance alternative investments",
+        "Rebalance only when alternatives appreciate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rebalancing illiquid alternatives requires careful consideration of liquidity constraints, transaction costs, and tolerance bands. Daily rebalancing is impractical, and alternatives should be rebalanced strategically, not ignored."
+    },
+    {
+      "id": 30,
+      "level": 2,
+      "topic": "Risk and Risk Management",
+      "question": "A hedge fund portfolio has a VaR (Value at Risk) of $5 million at the 95% confidence level over one day. This means:",
+      "options": [
+        "The portfolio will lose exactly $5 million tomorrow",
+        "There is a 5% probability of losing more than $5 million in one day",
+        "The portfolio has never lost more than $5 million",
+        "The portfolio is guaranteed to lose less than $5 million"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VaR at 95% confidence means there is a 5% probability (1 - 0.95) that losses will exceed $5 million in one day. It is a probabilistic measure, not a guarantee."
+    },
+    {
+      "id": 31,
+      "level": 2,
+      "topic": "Risk and Risk Management",
+      "question": "Which of the following is a limitation of using standard deviation as a risk measure for alternative investments?",
+      "options": [
+        "It captures all types of risk perfectly",
+        "It assumes normal distribution, which may not hold for alternatives",
+        "It is always the best risk measure",
+        "It requires no historical data"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Standard deviation assumes normal distribution of returns, but alternative investments often have non-normal distributions (skewness, kurtosis, fat tails). This makes standard deviation less appropriate for alternatives."
+    },
+    {
+      "id": 32,
+      "level": 2,
+      "topic": "Methods and Models",
+      "question": "A private equity fund is valuing a portfolio company using a discounted cash flow (DCF) model. Which of the following is most critical for an accurate valuation?",
+      "options": [
+        "Using the risk-free rate as the discount rate",
+        "Accurate projections of future cash flows and appropriate discount rate",
+        "Ignoring terminal value",
+        "Using historical costs only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DCF valuation depends critically on accurate cash flow projections and an appropriate discount rate that reflects the risk of the investment. The risk-free rate alone is insufficient, terminal value is important, and historical costs are not relevant for forward-looking valuation."
+    },
+    {
+      "id": 33,
+      "level": 2,
+      "topic": "Methods and Models",
+      "question": "When evaluating hedge fund performance, which metric is most appropriate for comparing funds with different risk profiles?",
+      "options": [
+        "Absolute returns only",
+        "Sharpe ratio or other risk-adjusted measures",
+        "Total assets under management",
+        "Number of years in operation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Risk-adjusted measures like the Sharpe ratio allow for meaningful comparison across funds with different risk profiles. Absolute returns, AUM, and years of operation do not account for risk differences."
+    },
+    {
+      "id": 34,
+      "level": 2,
+      "topic": "Due Diligence and Selecting Managers",
+      "question": "An institutional investor is conducting due diligence on a private equity fund. Which of the following should be evaluated?",
+      "options": [
+        "Track record and team stability only",
+        "Investment strategy, team, track record, terms, and operational infrastructure",
+        "Marketing materials only",
+        "Past performance guarantees"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Comprehensive due diligence should evaluate investment strategy, team quality and stability, track record, fund terms (fees, carry, key person provisions), and operational infrastructure. Marketing materials alone are insufficient, and performance cannot be guaranteed."
+    },
+    {
+      "id": 35,
+      "level": 2,
+      "topic": "Due Diligence and Selecting Managers",
+      "question": "A hedge fund manager has strong historical returns but high employee turnover. This is a:",
+      "options": [
+        "Positive signal indicating active management",
+        "Red flag that may indicate operational or cultural issues",
+        "Neutral factor with no impact",
+        "Sign of guaranteed future performance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "High employee turnover is a red flag that may indicate operational problems, poor culture, or compensation issues. It can disrupt investment processes and is a concern for long-term performance sustainability."
+    },
+    {
+      "id": 36,
+      "level": 2,
+      "topic": "Volatility and Complex Strategies",
+      "question": "A market-neutral hedge fund strategy is designed to:",
+      "options": [
+        "Generate returns regardless of market direction",
+        "Always outperform the market",
+        "Eliminate all risk",
+        "Guarantee positive returns"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Market-neutral strategies aim to generate returns independent of overall market direction by balancing long and short positions. They do not eliminate all risk, guarantee returns, or always outperform."
+    },
+    {
+      "id": 37,
+      "level": 2,
+      "topic": "Volatility and Complex Strategies",
+      "question": "Which of the following is a characteristic of a volatility trading strategy?",
+      "options": [
+        "Always generates positive returns",
+        "Profits from changes in market volatility, not just direction",
+        "Requires no risk management",
+        "Has no correlation with market movements"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Volatility trading strategies profit from changes in volatility levels and volatility spreads, not just directional price movements. They can generate losses, require risk management, and may have some correlation with markets."
+    },
+    {
+      "id": 38,
+      "level": 2,
+      "topic": "Universal Investment Considerations",
+      "question": "An investor is evaluating fees across different alternative investment funds. Which fee structure should be analyzed?",
+      "options": [
+        "Management fees only",
+        "Performance fees only",
+        "Total cost of ownership including all fees, expenses, and carried interest",
+        "Marketing fees only"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Investors should evaluate the total cost of ownership, including management fees, performance fees (carried interest), expenses, and any other costs. This provides a complete picture of the economic impact."
+    },
+    {
+      "id": 39,
+      "level": 2,
+      "topic": "Universal Investment Considerations",
+      "question": "ESG (Environmental, Social, and Governance) integration in alternative investments is best described as:",
+      "options": [
+        "A marketing tool with no impact on returns",
+        "A consideration that may affect risk, return, and long-term sustainability",
+        "A guarantee of higher returns",
+        "A requirement that eliminates all investment risk"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ESG integration is a risk management and value creation approach that can affect risk-adjusted returns and long-term sustainability. It is not a marketing tool, return guarantee, or risk eliminator."
+    },
+    {
+      "id": 40,
+      "level": 2,
+      "topic": "Emerging Topics",
+      "question": "A pension fund is considering direct investments in private companies rather than through funds. Which of the following is a key consideration?",
+      "options": [
+        "Direct investments require no expertise or resources",
+        "Direct investments eliminate all fees",
+        "Direct investments require significant internal expertise and resources",
+        "Direct investments guarantee higher returns"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Direct investments require substantial internal expertise, resources, and infrastructure for sourcing, due diligence, monitoring, and exits. They may reduce some fees but require significant capabilities and do not guarantee returns."
+    }
+  ],
+  "topics": {
+    "level1": [
+      "CAIA Ethical Principles",
+      "Introduction to Alternative Investments",
+      "Real Assets",
+      "Private Equity",
+      "Private Debt",
+      "Hedge Funds",
+      "Digital Assets",
+      "Funds of Funds"
+    ],
+    "level2": [
+      "CAIA Ethical Principles",
+      "Institutional Asset Owners",
+      "Asset Allocation",
+      "Risk and Risk Management",
+      "Methods and Models",
+      "Due Diligence and Selecting Managers",
+      "Volatility and Complex Strategies",
+      "Universal Investment Considerations",
+      "Emerging Topics"
+    ]
+  }
+}

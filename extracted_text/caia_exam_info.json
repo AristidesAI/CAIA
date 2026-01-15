@@ -1,0 +1,149 @@
+{
+  "exam_overview": {
+    "designation": "Chartered Alternative Investment Analyst (CAIA)",
+    "organization": "CAIA Association",
+    "location": "Amherst, Massachusetts",
+    "total_charterholders": "Over 14,000 professionals worldwide",
+    "language": "English only",
+    "typical_completion_time": "12 to 18 months (if passing both levels consecutively)"
+  },
+  "exam_structure": {
+    "levels": 2,
+    "level_1": {
+      "name": "CAIA Level I",
+      "description": "Foundational understanding of alternative investments",
+      "exam_format": "Multiple choice questions",
+      "duration": "4 hours",
+      "delivery": "Prometric testing centers (online proctored available only by approved accommodation)"
+    },
+    "level_2": {
+      "name": "CAIA Level II",
+      "description": "Advanced topics focusing on portfolio construction, due diligence, and advanced tools",
+      "exam_format": "Multiple choice questions and constructed response (essay) sections",
+      "duration": "4 hours",
+      "delivery": "Prometric testing centers (online proctored available only by approved accommodation)"
+    }
+  },
+  "curriculum": {
+    "update_frequency": "Annually (released in October for the following year)",
+    "content_revision_percentage": "10-20% each year",
+    "level_1_topics": [
+      "CAIA Ethical Principles",
+      "Introduction to Alternative Investments",
+      "Real Assets",
+      "Private Equity",
+      "Private Debt",
+      "Hedge Funds",
+      "Digital Assets",
+      "Funds of Funds"
+    ],
+    "level_2_topics": [
+      "CAIA Ethical Principles",
+      "Institutional Asset Owners",
+      "Asset Allocation",
+      "Risk and Risk Management",
+      "Methods and Models",
+      "Accessing Alternative Investments",
+      "Due Diligence and Selecting Managers",
+      "Volatility and Complex Strategies",
+      "Universal Investment Considerations",
+      "Emerging Topics"
+    ],
+    "2026_updates": {
+      "level_1": [
+        "Expanded content on Growth Equity",
+        "Deeper Digital Assets coverage (institutional portfolio roles, risk frameworks, allocation philosophy)",
+        "Revised content around fees & expenses to clarify impact on net performance",
+        "Removal of some older readings"
+      ],
+      "level_2": [
+        "Stronger content on Rebalancing Strategies, especially where portfolios include illiquid or alternative assets",
+        "Advanced sections on Digital Assets: specifically crypto trading & investing, and unique risks in crypto markets",
+        "New 'Emerging Topics' readings: e.g., historical performance of private market funds & case studies from pension plans using direct investments"
+      ]
+    }
+  },
+  "exam_dates_2026": {
+    "march_window": {
+      "registration_opens": "October 13, 2025",
+      "early_registration_deadline": "December 8, 2025",
+      "standard_registration_deadline": "February 2, 2026",
+      "level_1_dates": "March 2-13, 2026",
+      "level_2_dates": "March 16-27, 2026"
+    },
+    "september_window": {
+      "level_1_dates": "September 1-12, 2026",
+      "level_2_dates": "September 15-25, 2026"
+    },
+    "frequency": "Twice per year (March and September)"
+  },
+  "fees": {
+    "currency": "US Dollars",
+    "enrollment_fee": {
+      "amount": 400,
+      "description": "One-time, non-refundable enrollment fee for first-time Level I candidates (also applies for Level II in the stackable program)"
+    },
+    "exam_registration": {
+      "level_1": {
+        "standard": 1395,
+        "early": 995,
+        "includes": "Digital curriculum included with registration"
+      },
+      "level_2": {
+        "standard": 1395,
+        "early": 995,
+        "includes": "Digital curriculum included with registration"
+      }
+    },
+    "retake_fee": {
+      "amount": 795,
+      "description": "Applies regardless of level or reason for retake"
+    }
+  },
+  "membership": {
+    "full_member": {
+      "annual": 350,
+      "two_years": 650,
+      "emerging_markets_annual": 100,
+      "emerging_markets_two_years": 200
+    },
+    "affiliate_retired_member": {
+      "annual": 175
+    },
+    "requirements": "Pass Level II and accumulate relevant work experience"
+  },
+  "study_recommendations": {
+    "hours_per_level": "200-250 hours",
+    "caia_recommendation": "Approximately 200 hours per level"
+  },
+  "pass_rates": {
+    "march_2025": {
+      "level_1": "~48%",
+      "level_2": "~62%"
+    },
+    "trends": {
+      "level_1": "Pass rates have been declining in recent years",
+      "level_2": "More stable or trending upward"
+    }
+  },
+  "results_timing": {
+    "level_1": "Within ~5 weeks after the final exam day",
+    "level_2": "About 8 weeks (due to essay/constructed response sections)"
+  },
+  "eligibility": {
+    "prerequisites": "Foundational knowledge in finance and statistics recommended",
+    "language": "English only",
+    "id_requirements": "Valid ID policies apply"
+  },
+  "study_materials": {
+    "included_with_registration": "Digital curriculum",
+    "note": "Updated annually; prior editions are not recommended",
+    "additional_resources": "Various third-party study providers offer supplementary materials"
+  },
+  "last_updated": "2025-01-27",
+  "sources": [
+    "caia.org",
+    "schweser.com",
+    "en.wikipedia.org"
+  ]
+}
