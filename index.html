@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAIA Quiz Pro - Practice questions for CAIA Level I and Level II exam preparation">
+  <title>CAIA Quiz Pro - Alternative Investment Exam Prep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="app-layout">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a href="index.html" class="app-logo">
+          <div class="app-logo-icon">C</div>
+          <span>CAIA Quiz Pro</span>
+        </a>
+        <nav class="app-nav">
+          <a href="#" class="app-nav-link active" data-view="home">Home</a>
+          <a href="#" class="app-nav-link" data-view="quiz">Quiz</a>
+          <a href="#" class="app-nav-link" data-view="results">Results</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="app-main">
+      <div class="container container-lg">
+
+        <!-- Home View -->
+        <section id="home-view" class="view">
+          <div class="page-header text-center">
+            <h1 class="page-title">CAIA Exam Preparation</h1>
+            <p class="page-subtitle">Master alternative investments with practice questions</p>
+          </div>
+
+          <!-- Exam Info Cards -->
+          <div class="exam-info-banner card card-featured mb-8">
+            <div class="card-header">
+              <h2 class="card-title">About the CAIA Designation</h2>
+              <p class="card-subtitle">Chartered Alternative Investment Analyst</p>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-3 gap-6 exam-stats">
+                <div class="stat-box">
+                  <div class="stat-value">14,000+</div>
+                  <div class="stat-label">Charterholders Worldwide</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-value">200-250 hrs</div>
+                  <div class="stat-label">Study Time Per Level</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-value">2 Levels</div>
+                  <div class="stat-label">To Complete Designation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level Selection -->
+          <h2 class="text-2xl font-semibold mb-6">Select Your Level</h2>
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <!-- Level I Card -->
+            <div class="card level-card card-clickable" data-level="1">
+              <div class="card-body">
+                <span class="level-badge">Level I</span>
+                <h3 class="level-title">Foundation</h3>
+                <p class="text-muted">Foundational understanding of alternative investments including real assets, private equity, hedge funds, and more.</p>
+                <div class="level-stats">
+                  <div class="stat-item">
+                    <div class="stat-value" id="level1-questions">24</div>
+                    <div class="stat-label">Questions</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value" id="level1-topics">8</div>
+                    <div class="stat-label">Topics</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">~48%</div>
+                    <div class="stat-label">Pass Rate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level II Card -->
+            <div class="card level-card card-clickable" data-level="2">
+              <div class="card-body">
+                <span class="level-badge">Level II</span>
+                <h3 class="level-title">Advanced</h3>
+                <p class="text-muted">Advanced topics focusing on portfolio construction, due diligence, risk management, and institutional investing.</p>
+                <div class="level-stats">
+                  <div class="stat-item">
+                    <div class="stat-value" id="level2-questions">16</div>
+                    <div class="stat-label">Questions</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value" id="level2-topics">9</div>
+                    <div class="stat-label">Topics</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">~62%</div>
+                    <div class="stat-label">Pass Rate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Start -->
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="text-xl font-semibold mb-2">Ready to Practice?</h3>
+              <p class="text-muted mb-4">Take a mixed quiz with questions from both levels</p>
+              <button class="btn btn-primary btn-lg" id="start-mixed-quiz">
+                Start Mixed Quiz (All 40 Questions)
+              </button>
+            </div>
+          </div>
+
+          <!-- Disclaimer -->
+          <div class="disclaimer mt-8">
+            <p class="text-sm text-muted">
+              <strong>Disclaimer:</strong> These are practice questions for study purposes only and are not actual CAIA exam questions.
+              Actual CAIA exam questions are copyrighted and confidential. For official sample questions, visit
+              <a href="https://caia.org" target="_blank" rel="noopener noreferrer" class="text-gold">caia.org</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- Quiz View -->
+        <section id="quiz-view" class="view hidden">
+          <!-- Quiz Header -->
+          <div class="quiz-header">
+            <div class="flex justify-between items-center mb-4">
+              <div>
+                <span class="badge badge-gold" id="quiz-level-badge">Level I</span>
+                <span class="badge badge-primary ml-2" id="quiz-topic-badge">Topic</span>
+              </div>
+              <div class="quiz-timer" id="quiz-timer">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+                <span id="timer-display">00:00</span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="quiz-progress mb-6">
+              <div class="flex justify-between text-sm mb-2">
+                <span>Question <span id="current-question-num">1</span> of <span id="total-questions">40</span></span>
+                <span id="progress-percent">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="card quiz-question-card">
+            <div class="card-body">
+              <h2 class="question-text text-xl mb-6" id="question-text">
+                Loading question...
+              </h2>
+
+              <!-- Answer Options -->
+              <div class="answer-options" id="answer-options">
+                <!-- Options will be dynamically inserted -->
+              </div>
+
+              <!-- Explanation (shown after answering) -->
+              <div class="explanation hidden" id="explanation-box">
+                <div class="explanation-header">
+                  <span class="explanation-icon" id="explanation-icon"></span>
+                  <span class="explanation-title" id="explanation-title">Explanation</span>
+                </div>
+                <p class="explanation-text" id="explanation-text"></p>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="flex justify-between">
+                <button class="btn btn-ghost" id="btn-previous" disabled>
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6"></polyline>
+                  </svg>
+                  Previous
+                </button>
+                <button class="btn btn-primary" id="btn-next">
+                  Next
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                  </svg>
+                </button>
+                <button class="btn btn-success hidden" id="btn-finish">
+                  Finish Quiz
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20,6 9,17 4,12"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question Navigator -->
+          <div class="question-navigator mt-6">
+            <h4 class="text-sm font-semibold mb-3">Question Navigator</h4>
+            <div class="question-dots" id="question-dots">
+              <!-- Dots will be dynamically inserted -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Results View -->
+        <section id="results-view" class="view hidden">
+          <div class="page-header text-center">
+            <h1 class="page-title">Quiz Results</h1>
+            <p class="page-subtitle" id="results-subtitle">Great effort!</p>
+          </div>
+
+          <!-- Score Card -->
+          <div class="card card-featured mb-6">
+            <div class="card-body text-center">
+              <div class="results-score-ring">
+                <svg class="progress-ring" width="160" height="160">
+                  <circle class="progress-ring-bg" cx="80" cy="80" r="70" stroke-width="12"></circle>
+                  <circle class="progress-ring-fill" id="score-ring-fill" cx="80" cy="80" r="70" stroke-width="12"
+                          stroke-dasharray="439.82" stroke-dashoffset="439.82"></circle>
+                </svg>
+                <div class="progress-ring-content">
+                  <span class="score-value" id="score-value">0%</span>
+                  <span class="score-label">Score</span>
+                </div>
+              </div>
+              <div class="results-stats mt-6">
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="stat-box">
+                    <div class="stat-value text-success" id="correct-count">0</div>
+                    <div class="stat-label">Correct</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-value text-error" id="incorrect-count">0</div>
+                    <div class="stat-label">Incorrect</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-value" id="time-taken">00:00</div>
+                    <div class="stat-label">Time Taken</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Performance by Topic -->
+          <div class="card mb-6">
+            <div class="card-header">
+              <h3 class="card-title">Performance by Topic</h3>
+            </div>
+            <div class="card-body">
+              <div id="topic-performance">
+                <!-- Topic performance bars will be inserted here -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Question Review -->
+          <div class="card mb-6">
+            <div class="card-header">
+              <h3 class="card-title">Question Review</h3>
+              <p class="card-subtitle">Click on a question to review</p>
+            </div>
+            <div class="card-body">
+              <div class="question-review-list" id="question-review-list">
+                <!-- Question review items will be inserted here -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-center gap-4">
+            <button class="btn btn-outline" id="btn-review-answers">
+              Review All Answers
+            </button>
+            <button class="btn btn-primary" id="btn-retake">
+              Retake Quiz
+            </button>
+            <button class="btn btn-secondary" id="btn-new-quiz">
+              New Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- Topic Selection Modal -->
+        <div class="modal-backdrop" id="topic-modal-backdrop">
+          <div class="modal modal-md" id="topic-modal">
+            <div class="modal-header">
+              <h3 class="modal-title">Select Topics</h3>
+              <button class="modal-close" id="close-topic-modal">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="mb-4 text-muted">Choose which topics to include in your quiz:</p>
+              <div id="topic-checkboxes">
+                <!-- Topic checkboxes will be inserted here -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-ghost" id="select-all-topics">Select All</button>
+              <button class="btn btn-primary" id="start-topic-quiz">Start Quiz</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <p>CAIA Quiz Pro - Practice Questions for Alternative Investment Professionals</p>
+        <p class="mt-2">Last Updated: January 2025 | Not affiliated with CAIA Association</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
