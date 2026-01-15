@@ -144,15 +144,24 @@ for book in metadata['books']:
 
 ## Practice Questions
 
-A comprehensive set of practice questions modeled after the CAIA exam format is available in `CAIA_PRACTICE_QUESTIONS.md`. This file includes:
+Two comprehensive sets of practice questions are available:
 
+### 1. `CAIA_PRACTICE_QUESTIONS.md`
 - **Level I Questions**: 24 multiple-choice questions covering all Level I topics
 - **Level II Questions**: 16 multiple-choice questions + 5 constructed response (essay) questions
 - **Answers and Explanations**: Detailed explanations for all questions
 - **Topic Coverage**: Questions organized by curriculum topics
-- **Study Tips**: Guidance for effective exam preparation
 
-**Note**: These are practice questions for study purposes, not actual CAIA exam questions. For official sample exams, visit the [CAIA Association website](https://caia.org/content/sample-exam-level-i).
+### 2. `CAIA_DETAILED_PRACTICE_QUESTIONS.md` (NEW)
+- **Level I Questions**: 10 additional multiple-choice questions with comprehensive explanations
+- **Level II Questions**: 10 multiple-choice + 3 constructed response questions
+- **Detailed Feedback**: 
+  - ✅ Explanations when answers are correct
+  - ❌ Explanations for why wrong answers are incorrect
+  - 📝 Feedback for constructed response questions
+- **Reasoning Behind Answers**: Each question includes detailed reasoning to help understand concepts deeply
+
+**Note**: These are practice questions for study purposes, not actual CAIA exam questions. Actual past exam questions are copyrighted and not publicly available. For official sample exams, visit the [CAIA Association website](https://caia.org/content/sample-exam-level-i).
 
 ## Scripts
 
