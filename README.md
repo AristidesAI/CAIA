@@ -11,6 +11,8 @@
 
 </div>
 
+
+[Try Here](https://aristidesai.github.io/CAIA/)
 ---
 
 ## 📋 Table of Contents
@@ -189,7 +191,7 @@ After completing a quiz, you'll see:
 
 The application is hosted on GitHub Pages and can be accessed at:
 
-**🔗 [View Live Demo](https://your-username.github.io/CAIA)**
+**🔗 [View Live Demo](https://aristidesai.github.io/CAIA/)**
 
 > **Note:** Replace `your-username` with your actual GitHub username in the URL above.
 
