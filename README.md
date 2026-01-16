@@ -1,200 +1,548 @@
-# CAIA Study Materials - Text Extraction
+# 🎓 CAIA Quiz Pro
 
-This repository contains extracted text from CAIA (Chartered Alternative Investment Analyst) study materials to facilitate quiz creation.
+<div align="center">
 
-## Extracted Content
+**A comprehensive, interactive quiz application for CAIA (Chartered Alternative Investment Analyst) exam preparation**
 
-The following PDFs have been processed:
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://your-username.github.io/CAIA)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-1. **CAIA Level I** (2009) - 662 pages, 131,656 words
-2. **CAIA Level II** (2012) - 686 pages, 164,079 words  
-3. **CAIA Level II** (2016) - 1,079 pages, 240,982 words
+</div>
 
-**Total**: 2,427 pages, 536,717 words
+---
 
-## File Structure
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [How the Quiz Works](#-how-the-quiz-works)
+- [Live Demo](#-live-demo)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Data Sources](#-data-sources)
+- [Technologies Used](#-technologies-used)
+- [Usage Guide](#-usage-guide)
+- [Development](#-development)
+- [Contributing](#-contributing)
+- [Disclaimer](#-disclaimer)
+- [License](#-license)
+
+---
+
+## 🎯 Overview
+
+**CAIA Quiz Pro** is a modern, interactive web application designed to help candidates prepare for the Chartered Alternative Investment Analyst (CAIA) designation exams. The application provides:
+
+- **60+ Practice Questions** covering both Level I and Level II topics
+- **Interactive Quiz Interface** with real-time feedback and explanations
+- **Performance Tracking** with detailed analytics by topic
+- **Comprehensive Study Materials** extracted from official CAIA textbooks
+- **Up-to-Date Exam Information** including topics, dates, fees, and pass rates
+
+### 📊 Content Statistics
+
+- **2,427 pages** of extracted study materials
+- **536,717 words** from official CAIA textbooks
+- **60+ practice questions** with detailed explanations
+- **17 curriculum topics** across both exam levels
+- **37+ chapters** automatically identified and indexed
+
+---
+
+## ✨ Features
+
+### 🎮 Interactive Quiz System
+
+- **Multiple Quiz Modes**
+  - Level I only
+  - Level II only
+  - Mixed quiz (both levels)
+  - Topic-specific quizzes
+
+- **Real-Time Feedback**
+  - ✅ Immediate correct/incorrect indicators
+  - 📝 Detailed explanations for each answer
+  - 💡 Reasoning for why other options are wrong
+
+- **Progress Tracking**
+  - Visual progress bar
+  - Question navigator with status indicators
+  - Timer to track study time
+
+- **Performance Analytics**
+  - Overall score percentage
+  - Performance breakdown by topic
+  - Correct/incorrect question counts
+  - Time taken to complete quiz
+
+### 📚 Comprehensive Study Materials
+
+- **Extracted PDF Content**
+  - CAIA Level I (2009) - 662 pages
+  - CAIA Level II (2012) - 686 pages
+  - CAIA Level II (2016) - 1,079 pages
+
+- **Structured Data**
+  - Searchable JSON indexes
+  - Chapter-by-chapter organization
+  - Topic-based categorization
+
+### 📖 Practice Questions
+
+- **Level I Questions** (34 questions)
+  - CAIA Ethical Principles
+  - Introduction to Alternative Investments
+  - Real Assets
+  - Private Equity
+  - Private Debt
+  - Hedge Funds
+  - Digital Assets
+  - Funds of Funds
+
+- **Level II Questions** (26 questions)
+  - CAIA Ethical Principles
+  - Institutional Asset Owners
+  - Asset Allocation
+  - Risk and Risk Management
+  - Methods and Models
+  - Due Diligence and Selecting Managers
+  - Volatility and Complex Strategies
+  - Universal Investment Considerations
+  - Emerging Topics
+
+---
+
+## 🎮 How the Quiz Works
+
+### Starting a Quiz
+
+1. **Select Your Level**
+   - Click on "Level I" or "Level II" card to start a level-specific quiz
+   - Or click "Start Mixed Quiz" for questions from both levels
+
+2. **Topic Selection** (Optional)
+   - When selecting a specific level, a modal appears
+   - Choose which topics to include
+   - Select all or customize your selection
+
+3. **Quiz Interface**
+   - Questions are presented one at a time
+   - Select your answer by clicking on an option
+   - Explanation appears immediately after selection
+   - Navigate using Previous/Next buttons or question navigator
+
+### Answering Questions
 
 ```
-extracted_text/
-├── [CAIA Knowledge] coll. - Alternative Investments_ CAIA Level II (2016, Wiley) - libgen.li.txt
-├── [Wiley finance series] CAIA Association, Mark J. Anson PhD CFA - CAIA Level I_ An Introduction to Core Topics in Alternative Investments (Wiley Finance) (2009, Wiley) - libgen.li.txt
-├── CAIA Association - CAIA Level II_ Advanced Core Topics in Alternative Investments (2012, Wiley) - libgen.li.txt
-├── extraction_metadata.json          # Basic metadata about extraction
-├── searchable_index.json             # Full searchable index with all text + exam info
-├── index_metadata.json                # Lightweight index (metadata only, no full text) + exam info
-└── caia_exam_info.json               # Comprehensive CAIA exam information (2026)
+┌─────────────────────────────────────────┐
+│  Question 5 of 20                      │
+│  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
+│                                         │
+│  Which of the following best describes │
+│  the J-curve effect in private equity? │
+│                                         │
+│  ○ A) Immediate positive returns       │
+│  ● B) Initial negative returns         │
+│     C) Linear return pattern           │
+│     D) Consistent returns               │
+│                                         │
+│  ✅ Correct!                            │
+│  The J-curve describes the typical     │
+│  pattern where early returns are...    │
+└─────────────────────────────────────────┘
 ```
 
-## CAIA Exam Information
+### Reviewing Results
 
-The repository includes up-to-date CAIA exam information gathered from official sources:
+After completing a quiz, you'll see:
 
-### Key Exam Details
+1. **Score Overview**
+   - Circular progress ring showing percentage
+   - Total correct/incorrect counts
+   - Time taken
 
-- **Two Levels**: Level I (foundational) and Level II (advanced)
-- **Exam Windows**: March and September each year
-- **Study Time**: 200-250 hours recommended per level
-- **Pass Rates** (March 2025): Level I ~48%, Level II ~62%
+2. **Performance by Topic**
+   - Visual bars showing accuracy per topic
+   - Color-coded (green ≥70%, yellow ≥50%, red <50%)
 
-### Topics Covered
+3. **Question Review**
+   - Click any question to review
+   - See your answer vs. correct answer
+   - Read explanations again
 
-**Level I Topics:**
-- CAIA Ethical Principles
-- Introduction to Alternative Investments
-- Real Assets
-- Private Equity
-- Private Debt
-- Hedge Funds
-- Digital Assets
-- Funds of Funds
+4. **Actions Available**
+   - Review All Answers (goes through all questions)
+   - Retake Quiz (same questions, reshuffled)
+   - New Quiz (return to home)
 
-**Level II Topics:**
-- CAIA Ethical Principles
-- Institutional Asset Owners
-- Asset Allocation
-- Risk and Risk Management
-- Methods and Models
-- Accessing Alternative Investments
-- Due Diligence and Selecting Managers
-- Volatility and Complex Strategies
-- Universal Investment Considerations
-- Emerging Topics
+### Keyboard Shortcuts
 
-### Accessing Exam Information
+- `←` Arrow Left: Previous question
+- `→` Arrow Right: Next question
+- `1-4` Number keys: Select answer option A-D
 
-```python
-import json
+---
 
-# Load exam information
-with open('extracted_text/caia_exam_info.json', 'r', encoding='utf-8') as f:
-    exam_info = json.load(f)
+## 🌐 Live Demo
 
-# Access exam details
-print(f"Level I Topics: {exam_info['curriculum']['level_1_topics']}")
-print(f"Exam Fees: ${exam_info['fees']['exam_registration']['level_1']['standard']}")
-print(f"2026 Exam Dates: {exam_info['exam_dates_2026']['march_window']['level_1_dates']}")
-```
+The application is hosted on GitHub Pages and can be accessed at:
 
-The exam information is also integrated into both `searchable_index.json` and `index_metadata.json` for easy access alongside the study materials.
+**🔗 [View Live Demo](https://your-username.github.io/CAIA)**
 
-## Usage for Quiz Creation
+> **Note:** Replace `your-username` with your actual GitHub username in the URL above.
 
-### Option 1: Use the Searchable Index (Recommended)
+---
 
-The `searchable_index.json` file contains:
-- Full text from all books
-- Chapter structure (37, 40, and 32 chapters identified)
-- Metadata (page counts, word counts, etc.)
-- CAIA exam information (topics, dates, fees, pass rates, etc.)
-- Exam level mapping for each book
+## 🚀 Getting Started
 
-```python
-import json
+### Prerequisites
 
-# Load the searchable index
-with open('extracted_text/searchable_index.json', 'r', encoding='utf-8') as f:
-    index = json.load(f)
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- Python 3.9+ (for running extraction scripts)
+- Git (for cloning the repository)
 
-# Access exam information
-if 'exam_information' in index:
-    exam_info = index['exam_information']
-    print(f"Level I Topics: {exam_info['curriculum']['level_1_topics']}")
+### Installation
 
-# Access a specific book
-for book in index['books']:
-    print(f"Book: {book['title']}")
-    print(f"Exam Level: {book.get('exam_level', 'Unknown')}")
-    print(f"Chapters: {len(book['chapters']) if book['chapters'] else 'N/A'}")
-    
-    # Access chapters
-    if book['chapters']:
-        for chapter in book['chapters']:
-            print(f"  Chapter {chapter['number']}: {chapter['title']}")
-            # Use chapter['content'] for quiz generation
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/CAIA.git
+   cd CAIA
+   ```
 
-### Option 2: Use Individual Text Files
+2. **Install Python dependencies** (for text extraction scripts)
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Each PDF has been extracted to a separate `.txt` file with page markers:
+3. **Open the application**
+   - Simply open `index.html` in your web browser, or
+   - Serve it using a local web server:
+     ```bash
+     # Using Python
+     python -m http.server 8000
+     
+     # Using Node.js
+     npx serve
+     
+     # Using PHP
+     php -S localhost:8000
+     ```
+
+4. **Access the application**
+   - Open `http://localhost:8000` in your browser
+
+### For GitHub Pages Deployment
+
+1. Push the repository to GitHub
+2. Go to Settings → Pages
+3. Select the main branch as source
+4. The site will be available at `https://your-username.github.io/CAIA`
+
+---
+
+## 📁 Project Structure
 
 ```
---- Page 1 ---
-[content]
---- Page 2 ---
-[content]
-...
+CAIA/
+├── index.html                          # Main application HTML
+├── css/
+│   ├── main.css                        # Base styles and design system
+│   ├── components.css                  # Reusable component styles
+│   └── quiz.css                        # Quiz-specific styles
+├── js/
+│   └── quiz.js                         # Main application logic
+├── data/
+│   └── questions/
+│       └── questions.json              # Question database (60+ questions)
+├── extracted_text/                     # Extracted study materials
+│   ├── *.txt                          # Extracted text files
+│   ├── searchable_index.json          # Full searchable index
+│   ├── index_metadata.json            # Lightweight metadata index
+│   └── caia_exam_info.json            # Exam information database
+├── CAIA_PRACTICE_QUESTIONS.md          # Practice questions set 1
+├── CAIA_DETAILED_PRACTICE_QUESTIONS.md # Practice questions set 2
+├── extract_pdf_text.py                # PDF text extraction script
+├── create_searchable_index.py         # Index creation script
+├── integrate_exam_info.py             # Exam info integration script
+├── requirements.txt                    # Python dependencies
+└── README.md                          # This file
 ```
 
-### Option 3: Use the Lightweight Index
+---
 
-For faster loading (without full text), use `index_metadata.json`:
+## 📚 Data Sources
 
-```python
-import json
+### Study Materials
 
-with open('extracted_text/index_metadata.json', 'r', encoding='utf-8') as f:
-    metadata = json.load(f)
+The application includes extracted text from:
 
-# Then load specific text files as needed
-for book in metadata['books']:
-    with open(book['text_file'], 'r', encoding='utf-8') as f:
-        text = f.read()
-    # Process text for quiz generation
-```
+1. **CAIA Level I** (2009, Wiley)
+   - 662 pages, 131,656 words
+   - Introduction to Core Topics in Alternative Investments
 
-## Practice Questions
+2. **CAIA Level II** (2012, Wiley)
+   - 686 pages, 164,079 words
+   - Advanced Core Topics in Alternative Investments
 
-Two comprehensive sets of practice questions are available:
+3. **CAIA Level II** (2016, Wiley)
+   - 1,079 pages, 240,982 words
+   - Alternative Investments: CAIA Level II
 
-### 1. `CAIA_PRACTICE_QUESTIONS.md`
-- **Level I Questions**: 24 multiple-choice questions covering all Level I topics
-- **Level II Questions**: 16 multiple-choice questions + 5 constructed response (essay) questions
-- **Answers and Explanations**: Detailed explanations for all questions
-- **Topic Coverage**: Questions organized by curriculum topics
+### Exam Information
 
-### 2. `CAIA_DETAILED_PRACTICE_QUESTIONS.md` (NEW)
-- **Level I Questions**: 10 additional multiple-choice questions with comprehensive explanations
-- **Level II Questions**: 10 multiple-choice + 3 constructed response questions
-- **Detailed Feedback**: 
-  - ✅ Explanations when answers are correct
-  - ❌ Explanations for why wrong answers are incorrect
-  - 📝 Feedback for constructed response questions
-- **Reasoning Behind Answers**: Each question includes detailed reasoning to help understand concepts deeply
+- **Source**: Official CAIA Association website (caia.org)
+- **Last Updated**: January 2025
+- **Includes**: Topics, exam dates, fees, pass rates, study recommendations
 
-**Note**: These are practice questions for study purposes, not actual CAIA exam questions. Actual past exam questions are copyrighted and not publicly available. For official sample exams, visit the [CAIA Association website](https://caia.org/content/sample-exam-level-i).
+### Practice Questions
 
-## Scripts
+- **Source**: Modeled after CAIA exam format based on publicly available curriculum
+- **Note**: These are practice questions, not actual exam questions
+- **Coverage**: All major topics from both exam levels
 
-- `extract_pdf_text.py` - Extracts text from PDF files
-- `create_searchable_index.py` - Creates structured indexes from extracted text
-- `integrate_exam_info.py` - Integrates exam information with the indexes
+---
 
-## Requirements
+## 🛠️ Technologies Used
+
+### Frontend
+
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with CSS custom properties
+- **JavaScript (ES6+)** - Vanilla JS, no frameworks
+- **Font Awesome** - Icons (via SVG)
+
+### Backend/Data Processing
+
+- **Python 3.9+** - Text extraction and data processing
+- **pdfplumber** - PDF text extraction
+- **PyPDF2** - Alternative PDF processing
+
+### Data Format
+
+- **JSON** - Structured data storage
+- **Markdown** - Documentation and practice questions
+
+### Hosting
+
+- **GitHub Pages** - Static site hosting
+
+---
+
+## 📖 Usage Guide
+
+### For Students
+
+1. **Start with Level I** if you're new to CAIA
+2. **Take topic-specific quizzes** to focus on weak areas
+3. **Review explanations** carefully to understand concepts
+4. **Track your progress** using the performance analytics
+5. **Use the extracted materials** for deeper study
+
+### For Developers
+
+#### Extracting New PDF Content
 
 ```bash
-pip install pdfplumber PyPDF2
-```
-
-Or use the provided `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Re-extracting Text
-
-If you need to re-extract text from the PDFs:
-
-```bash
+# Extract text from PDFs
 python3 extract_pdf_text.py
+
+# Create searchable index
 python3 create_searchable_index.py
+
+# Integrate exam information
+python3 integrate_exam_info.py
 ```
 
-## Notes
+#### Adding New Questions
 
-- Text extraction preserves page boundaries for reference
-- Chapters are automatically detected where possible
-- All text is UTF-8 encoded
-- The searchable index includes full text for easy searching and quiz generation
-- Exam information is sourced from official CAIA Association websites and updated as of January 2025
-- Books are automatically mapped to exam levels (Level I or Level II) based on their titles
+1. Open `data/questions/questions.json`
+2. Add a new question object following this format:
+
+```json
+{
+  "id": 61,
+  "level": 1,
+  "topic": "Private Equity",
+  "question": "Your question text here?",
+  "options": [
+    "Option A",
+    "Option B",
+    "Option C",
+    "Option D"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Detailed explanation here.",
+  "wrongAnswerExplanations": {
+    "0": "Why option A is wrong",
+    "1": "Why option B is wrong",
+    "2": "Why option C is wrong"
+  }
+}
+```
+
+3. Save the file - changes will appear immediately
+
+#### Customizing Styles
+
+- **Colors**: Edit CSS custom properties in `css/main.css`
+- **Components**: Modify `css/components.css`
+- **Quiz UI**: Adjust `css/quiz.css`
+
+---
+
+## 🔧 Development
+
+### Running Locally
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/CAIA.git
+cd CAIA
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Serve locally
+python -m http.server 8000
+
+# Open browser
+open http://localhost:8000
+```
+
+### Building for Production
+
+The application is already optimized for production:
+
+- No build step required
+- Vanilla JavaScript (no transpilation needed)
+- Static assets only
+- Works offline after initial load
+
+### Browser Compatibility
+
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+### Ways to Contribute
+
+1. **Add More Questions**
+   - Follow the question format in `data/questions/questions.json`
+   - Ensure explanations are clear and educational
+
+2. **Improve Explanations**
+   - Enhance existing question explanations
+   - Add more detailed reasoning
+
+3. **Fix Bugs**
+   - Report issues via GitHub Issues
+   - Submit pull requests with fixes
+
+4. **Enhance Features**
+   - Suggest new features
+   - Implement UI/UX improvements
+
+5. **Update Content**
+   - Keep exam information current
+   - Add new topics as curriculum evolves
+
+### Contribution Guidelines
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## ⚠️ Disclaimer
+
+**Important Legal Notice:**
+
+- This application contains **practice questions** modeled after the CAIA exam format
+- These are **NOT actual CAIA exam questions**
+- Actual CAIA exam questions are **copyrighted and confidential**
+- This project is **not affiliated with** or endorsed by the CAIA Association
+- For official sample questions and study materials, visit [caia.org](https://caia.org)
+
+**Educational Purpose Only:**
+
+This application is intended solely for educational and study purposes. Users should supplement this tool with:
+- Official CAIA curriculum materials
+- Official CAIA sample exams
+- Approved study guides and prep courses
+- Professional exam preparation services
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Note on PDF Content:**
+
+The extracted text from CAIA textbooks is provided for educational purposes. The original PDFs remain the property of their respective copyright holders (Wiley, CAIA Association). Users are responsible for ensuring their use complies with applicable copyright laws.
+
+---
+
+## 📞 Support & Resources
+
+### Official CAIA Resources
+
+- **CAIA Association**: [caia.org](https://caia.org)
+- **Sample Exams**: [caia.org/content/sample-exam-level-i](https://caia.org/content/sample-exam-level-i)
+- **Registration**: [caia.org/registration-and-fees](https://caia.org/registration-and-fees)
+- **Curriculum**: [caia.org/curriculum-study-tools](https://caia.org/curriculum-study-tools)
+
+### Study Recommendations
+
+- **Study Time**: 200-250 hours per level
+- **Preparation**: Use official materials + practice questions
+- **Timeline**: 12-18 months to complete both levels
+- **Pass Rates**: Level I ~48%, Level II ~62% (March 2025)
+
+---
+
+## 🎯 Roadmap
+
+Future enhancements planned:
+
+- [ ] Question difficulty levels
+- [ ] Study mode (unlimited attempts)
+- [ ] Flashcard feature
+- [ ] Progress tracking across sessions
+- [ ] Export results to PDF
+- [ ] Mobile app version
+- [ ] More practice questions (target: 200+)
+- [ ] AI-powered question generation
+
+---
+
+## 🙏 Acknowledgments
+
+- **CAIA Association** for providing the curriculum framework
+- **Wiley** for publishing comprehensive study materials
+- **Open source community** for tools and libraries
+- **Contributors** who help improve this project
+
+---
+
+<div align="center">
+
+**Made with ❤️ for CAIA candidates**
+
+[⭐ Star this repo](https://github.com/your-username/CAIA) | [🐛 Report Bug](https://github.com/your-username/CAIA/issues) | [💡 Request Feature](https://github.com/your-username/CAIA/issues)
+
+**Good luck with your CAIA exam preparation! 🎓**
+
+</div>
